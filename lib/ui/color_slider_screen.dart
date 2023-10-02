@@ -13,7 +13,11 @@ class _ColorSliderScreenState extends State<ColorSliderScreen> {
   ColorController controller = Get.put(ColorController());
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(centerTitle: true,title: Text("Basic state color manage"),),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Basic state color manage"),
+      ),
       body: Center(
           child: Obx(
         () => Column(
